@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Modern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="clock-stage">
+        <!-- stage -->
+        <div id="dates" class="ring ring-dates">
+            <!-- dates -->
+        </div>
+        <div id="months" class="ring ring-months">
+            <!-- months -->
+        </div>
+        <div id="weekdays" class="ring ring-weekdays">
+            <!-- weekdays -->
+        </div>
+        <div id="clock" class="clock-center ring">
+            <!-- clock -->
+            <div id="digital" class="digital-time" aria-live="polite">
+                <span id="time-h"></span>:<span id="time-m"></span>:<span id="time-s"></span>
+            </div>
+            <div class="analog">
+                <div class="hand hour" id="hour"></div>
+                <div class="hand minute" id="minute"></div>
+                <div class="hub hand"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
