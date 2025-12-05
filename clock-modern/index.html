@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clock Modern Way</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <h1 class="title">Clock Modern Way</h1>
+
+    <div class="stage-info">
+      <span id="stage-indicator" class="stage-name">Date</span>
+      <span class="stage-counter"><span id="current-stage">1</span>/5</span>
+    </div>
+
+    <div class="clock-stage">
+      <div id="dates" class="ring ring-dates stage-content" data-stage="0" aria-hidden></div>
+      <div id="months" class="ring ring-months stage-content" data-stage="1" aria-hidden></div>
+      <div id="weekdays" class="ring ring-weekdays stage-content" data-stage="2"></div>
+
+      <div class="clock-center stage-content" data-stage="3">
+        <div class="analog">
+          <div class="hand hour" id="hour"></div>
+          <div class="hand minute" id="minute"></div>
+          <div class="hand second" id="second"></div>
+          <div class="hub"></div>
+        </div>
+      </div>
+
+      <div id="digital" class="digital-time stage-content" data-stage="4" aria-live="polite">--:--:--</div>
+    </div>
+
+    <div class="controls">
+      <button id="prev-stage" class="btn btn-prev">← Prev</button>
+      <button id="next-stage" class="btn btn-next">Next →</button>
+    </div>
+
+    <p class="instructions">Use buttons to cycle through stages or they auto-rotate every 5 seconds</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
